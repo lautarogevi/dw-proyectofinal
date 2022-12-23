@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400&family=Quicksand:wght@300;400&display=swap');
+/*
+paleta de colores
+#1A1C20
+#393E46
+#EEEEEE
+#F7F7F7
+
+Fuentes:
+font-family: 'Kanit', sans-serif;
+font-family: 'Quicksand', sans-serif;
+
+
+*/
+
+/*              INDEX */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    background-color: #1A1C20;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+main{
+    background-color: #EEEEEE;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*          BARRA DE NAVEGACION */
+.navBar{
+    display: flex;
+    gap: 70px;
+    margin-right: 65px;
+}
+
+.navBar li{
+    font-size: 30px;
+    list-style: none;
+}
+
+.navBar li a{
+    text-decoration: none;
+    color: #EEEEEE;
+    font-size: 24px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+
+/*          INDEX */
+
+.banner{
+    width: 100%;
+    height: 500px;
+    background-image: url(../assets/img/fondo\ banner\ porsche\ gt3.jpg);
+    background-position: center;
+    background-size: 100%;
+}
+
+
+#tituloModelos{
+    color: ##393E46;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-size: 40px;
+    font-weight: 120;
+}
+
+.modelosIndex{
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.modelosIndex h2{
+    font-family: 'Quicksand', sans-serif;
+    
+}
+
+
+
+
+/*            FOOTER */
+
+.footer{
+    background-color: #393E46;
+    text-align: center;
+    margin-top: auto;
+}
+
+.redes a{
+    margin: 24px;
+}
+
+.texto{
+    text-align: center;
+    font-family: 'Kanit', sans-serif
+}
+
+
+
+
+
+/*      FORMULARIO DE CONTACTOS*/
+
+.formulario{
+    font-family: 'Kanit', sans-serif;
+}
+
+fieldset legend{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+}
+
+
+
+
+/*          MODELOS */
+
+.containerModelos{
+    display: grid;
+    width: 100%;
+    min-height: 750px;
+    background-color: #EEEEEE;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 300px 300px;
+    grid-template-areas: 
+    "h1 h1 h1"
+    "cartModelo1 cartModelo2 cartModelo3"
+    "cartModelo4 cartModelo5 cartModelo6"
+    ;
+}
+
+.containerModelos h1{
+    font-family: 'Kanit', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    grid-area: h1;
+    text-align: center;
+}
+
+.containerModelos p{
+    font-family: 'Kanit', sans-serif;
+}
+
+
+#cartModelo1{
+    grid-area: cartModelo1;
+}
+#cartModelo2{
+    grid-area: cartModelo2;
+}
+#cartModelo3{
+    grid-area: cartModelo3;
+}
+#cartModelo4{
+    grid-area: cartModelo4;
+}
+#cartModelo5{
+    grid-area: cartModelo5;
+    margin-top: 40px;
+}
+#cartModelo5 div{
+    margin-top: 25px;
+}
+
+#cartModelo6{
+    grid-area: cartModelo6;
+}
+
+
+
+
+/*          DEALERS */
+
+.containerDealers{
+    display: flex;
+    justify-content: space-around;
+    height: 740px;
+    align-items: center;
+}
+
+
+.containerDealers p{
+    font-family: 'Kanit', sans-serif;
+}
+
+.containerDealers iframe{
+    margin-bottom: 25px;
+}
+
+/*          PORSCHELIVE */
+
+.containerGaleria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 200px 100px;
+    grid-template-areas: 
+    "item1 item1 item2 item3"
+    "item1 item1 item4 item4"
+    "item5 item5 item4 item4"
+    "item6 item6 item7 item7"
+    ;
+    gap: 5px;
+}
+
+#item1{
+    grid-area: item1;
+}
+#item2{
+    grid-area: item2;
+}
+#item3{
+    grid-area: item3;
+}
+#item4{
+    grid-area: item4;
+}
+#item5{
+    grid-area: item5;
+}
+#item6{
+    grid-area: item6;
+}
+#item7{
+    grid-area: item7;
+}
+
