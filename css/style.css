@@ -311,7 +311,7 @@ fieldset legend{
     }
 }
 
-@media (max-width: 768px){
+@media (min-width: 421px) and (max-width: 768px){
     main{
         height: 1160px;
     }
