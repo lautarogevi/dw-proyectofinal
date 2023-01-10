@@ -49,7 +49,6 @@ body{
 }
 
 .navBar li{
-    font-size: 30px;
     list-style: none;
 }
 
@@ -265,10 +264,7 @@ fieldset legend{
 }
 
 
-@media (max-width: 390px){
-    footer{
-        
-    }
+@media (max-width: 420px){
     main{
         height: 1200px;
     }
@@ -315,14 +311,74 @@ fieldset legend{
     }
 }
 
-@media (min-width: 768px)and(max-width: 1024px){
+@media (max-width: 768px){
     main{
-        height: 1200px;
+        height: 1160px;
     }
-    .banner{
-        height: 200px;
+    .navBar{
+        gap: 45px;
+        margin-right: 25px;
+    }
+    .navBar li a{
+        font-size: 20px;
     }
     .modelosIndex{
-        flex-wrap: wrap;
+        display: grid;
+        width: 100%;
+        min-height: 700px;
+        align-items: center;
+        text-align: center;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 300px 300px;
+        grid-template-areas: 
+        "modTablet1 modTablet2"
+        "modTablet3 modTablet4"
+        ;
+    }
+    .modTablet1{
+        grid-area: modTablet1;
+    }
+    .modTablet2{
+        grid-area: modTablet2;
+    }
+    .modTablet3{
+        grid-area: modTablet3;
+    }
+    .modTablet4{
+        grid-area: modTablet4;
+    }
+    .banner{
+        max-height: 300px;
+    }
+    .containerModelos{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 300px 300px 300px;
+        grid-template-areas: 
+        "h1 h1"
+        "cartModelo1 cartModelo2"
+        "cartModelo3 cartModelo4"
+        "cartModelo5 cartModelo6"
+        ;
+    }
+    .modelosFotosTablet{
+        width: 75%;
+    }
+    .containerDealers{
+        flex-direction: column;
+        margin-top: 220px;
+    }
+    .containerGaleria{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 300px 250px 300px 300px;
+        grid-template-areas: 
+        "item1 item1 item2 item3"
+        "item1 item1 item4 item4"
+        "item5 item5 item4 item4"
+        "item8 item8 item7 item7"
+        ;
+        gap: 5px;
+    }
+    .item6,.item9,.item10,.item11{
+        display: none;
     }
 }
