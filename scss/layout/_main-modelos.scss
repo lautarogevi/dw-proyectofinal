@@ -1,0 +1,51 @@
+.containerModelos{
+	display: grid;
+	width: 100%;
+	min-height: 750px;
+	background-color: #EEEEEE;
+	align-items: center;
+	text-align: center;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 100px 300px 300px;
+	grid-template-areas: "h1 h1 h1"
+    "cartModelo1 cartModelo2 cartModelo3"
+    "cartModelo4 cartModelo5 cartModelo6";
+	h1{
+		font-family: 'Kanit', sans-serif;
+		font-size: 40px;
+		font-weight: 300;
+		grid-area: h1;
+		text-align: center;
+	}
+	p{
+		font-family: 'Kanit', sans-serif;
+	}
+	div{
+		:hover{
+			cursor: pointer;
+			scale: 1.04;
+		}
+	}
+}
+.cartModelo1{
+	grid-area: cartModelo1;
+}
+.cartModelo2{
+	grid-area: cartModelo2;
+}
+.cartModelo3{
+	grid-area: cartModelo3;
+}
+.cartModelo4{
+	grid-area: cartModelo4;
+}
+.cartModelo5{
+	grid-area: cartModelo5;
+	margin-top: 40px;
+	div{
+		margin-top: 25px;
+	}
+}
+.cartModelo6{
+	grid-area: cartModelo6;
+}

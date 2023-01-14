@@ -1,0 +1,12 @@
+.containerDealers{
+	display: flex;
+	justify-content: space-around;
+	height: 740px;
+	align-items: center;
+	p{
+		font-family: 'Kanit', sans-serif;
+	}
+	iframe{
+		margin-bottom: 25px;
+	}
+}

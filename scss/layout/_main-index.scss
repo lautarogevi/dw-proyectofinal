@@ -1,0 +1,26 @@
+.banner{
+	width: 100%;
+	height: 600px;
+}
+.carousel-item{
+	img{
+		max-height: 600px;
+	}
+}
+#tituloModelos{
+	color: #393E46;
+	text-align: center;
+	font-family: 'Kanit', sans-serif;
+	font-size: 40px;
+	font-weight: 120;
+}
+.modelosIndex{
+	font-family: 'Kanit', sans-serif;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	height: 300px;
+	h2{
+		font-family: 'Quicksand', sans-serif;
+	}
+}
